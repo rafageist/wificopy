@@ -111,7 +111,6 @@ class app {
 	}
 	
 	static function Run(){
-		// echo serialize(array('user'=>'rafa','pass'=>'creandohorarios','credit'=>1000));
 		if (self::verifyAuth() || self::isPublicPage()){
 			include_once "../model/users.php";
 			
