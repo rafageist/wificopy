@@ -1,0 +1,30 @@
+
+<div class="row">
+	<div class="col-md-4">
+	
+	</div>
+	<div class="col-md-4">
+		<?php if ($error): ?>
+			<div class="alert alert-danger">
+				Acceso denegado
+			</div>
+		<?php endif; ?>
+		<div class="panel panel-default" >
+			<div class="panel-heading">
+				Autenticarse
+			</div>
+			<div class="panel-body">
+				<form action="index.php?page=auth&action=login" method="post">
+					 <div class="form-group">
+						Usuario:<br/>
+						<input type="text" class="form-control" name="user" placeholder="usuario">
+						Contrase&ntilde;a:<br/>
+						<input type="password" class="form-control" name="pass" placeholder="contrase&ntilde;a">
+					  </div>
+					  <br/><br/>
+					  <button type="submit" class="btn btn-default">Entrar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

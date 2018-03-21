@@ -1,0 +1,6 @@
+<?php include "../views/breadcrumb.html"; ?>
+<div class="list-group">
+<?php foreach ($taxs as $tax): ?>
+<a style="width:90%;" class="list-group-item" href="<?php echo $tax['url'].$tax['id'];?>"><?php echo $tax['title']; ?></a>
+<?php endforeach; ?>
+</div>

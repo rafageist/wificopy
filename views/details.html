@@ -1,0 +1,31 @@
+<?php include "../views/breadcrumb.html"; ?>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h2 class="panel-title"><?php echo $xfile['title']; ?></h2>
+	</div>
+	<div class="panel-body">
+	
+		<img src="img.php?id=<?php echo md5($xfile['id']);?>" style="float:left;margin:10px;">
+		
+		<p><?php echo $xfile['desc']; ?></p><br/>
+		<?php 
+			$xname = explode("/",$xfile['id']); 
+			$xname = $xname[count($xname)-1];
+		?>
+		<table class="table">
+			<tr><td>Precio: </td><td>$<?php echo number_format($xfile['price'],2);?></b> </td></tr>
+			<tr><td>Tama&ntilde;o:</td><td><?php echo app::friendlySize($xfile['size']); ?></b><td></tr>
+			<?php foreach($xfile['properties'] as $k=>$v): ?>
+				<tr>
+				<td><?php echo ucfirst(model::translate(strtolower($k)));?></td>
+				<td><?php echo $v; ?></td>
+				</tr>
+			<?php endforeach; ?>
+			</table>
+			
+			<?php if (app::verifyAuth()): ?>
+			Descargar: <a href="?page=download&id=<?php echo md5($xfile['id']);?>"><?php echo $xname; ?></a> 
+			<?php endif; ?>
+			
+	</div>
+</div>

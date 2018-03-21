@@ -1,0 +1,8 @@
+<?php if ($breadcumb): ?>
+	<ol class="breadcrumb" style="padding-top: 15px;">
+	<?php foreach($breadcumb as $b): ?>
+		<li><a href = "<?php echo $b['url'];?>"><?php echo $b['title'];?></a></li>
+	<?php endforeach; ?>
+	</ol>
+<?php endif;?>
+

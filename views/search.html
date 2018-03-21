@@ -1,0 +1,15 @@
+<?php include "../views/breadcrumb.html"; ?>
+<?php if (isset($results[0])): ?>
+	<div class="row">
+	<?php foreach($results as $result): ?>
+	  <div class="col-xs-6 col-md-2" style="text-align:center; height: 100px;">
+	    <a href="?page=details&id=<?php echo md5($result['id']);?>" class="thumbnail">
+	      <img width="45" src="img.php?type=icon&id=<?php echo md5($result['id']);?>">
+	      <?php echo $result['title']; ?>
+	    </a>
+	   </div>
+	<?php endforeach; ?>
+	</div>
+<?php else: ?>
+<p>No se encontraron archivos <?php if (isset($_GET['search'])): ?>para <b><?php echo $_GET['search']; ?></b><?php endif;?></p>
+<?php endif; ?>

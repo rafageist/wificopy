@@ -1,0 +1,16 @@
+WifiCopy
+----------
+Es una sistema que permite catalogar e indexar archivos en un servidor, para posteriormente ser presentados a los usuarios mediante una aplicación web a través de una conexión preferiblemente inalámbrica. Los usuarios, dueños de dispositivos móviles, pueden revisar gratuitamente el contenido indexado, pero para descargar archivos necesitan una cuenta en el sistema. La cuenta tendrá asociado un crédito virtual que será incrementado en la medida que los usuarios paguen al dueño o administrador del servidor y será disminuido cuando estos hagan las descargas de archivos que deseen.
+
+La idea del proyecto surge para suprimir algunas deficiencias encontradas en los diferentes puntos de ventas de contenido multimedia en Cuba, aunque puede ser utilizado para cualquier tipo de archivo. Algunas deficiencias son:
+
+- La necesidad de medios intermediarios para la copia de archivos, dígase memorias flash, cables extensores, hub de multiples puertos USB.
+- La necesidad de programas y drivers intermediarios para copiar en los diferentes dispositivos de destino, como lo son celulares y tabletas.
+- La innecesaria copia de un lote de archivos cuando solo se necesita uno de ellos, pero no se cobra por tan poco.
+- La necesidad de atender a un usuario a la vez y la formación de colas de espera.
+- La necesidad del vendedor estar presente todo el tiempo en el punto de venta, se venda o no se venda.
+- La falta de garantía de la integridad de los archivos copiados.
+- La falta de catálogos que los usuarios pudieran consultar antes de solicitar.
+- El desconocimiento de contenido nuevo y/o popular en el punto de venta.
+- La nececidad de que el vendedor reciba la petición de que el usuario necesita copiar.
+- La falta de estudio estadístico de los vendedores.
